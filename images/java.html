@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <script type="text/javascript">
+        var image_tracker = 'h';
+        function change() {
+            var image = document.getElementsById('hide');
+            if(image_tracker==='h') {
+                image.src = 'hide-24.png';
+                image_tracker = 's';
+            }
+            else {
+                image.src = 'eye-24.png';
+                image_tracker = 'h';
+            }
+        }
+    </script> -->
+</head>
+<body>
+
+    <p>
+        <img alt="" src="http://www.userinterfaceicons.com/80x80/minimize.png" 
+            style="height: 85px; width: 198px" id="imgClickAndChange" onclick="changeImage()"  />
+</p>
+
+<script language="javascript">
+    function changeImage() {
+
+        if (document.getElementById("imgClickAndChange").src == "http://www.userinterfaceicons.com/80x80/minimize.png") 
+        {
+            document.getElementById("imgClickAndChange").src = "http://www.userinterfaceicons.com/80x80/maximize.png";
+        }
+        else 
+        {
+            document.getElementById("imgClickAndChange").src = "http://www.userinterfaceicons.com/80x80/minimize.png";
+        }
+    }
+</script>
+
+
+    <!-- <img id="example" src="eye-24.png" alt="Password hide and show logo" onclick="changeImage()">
+<script type="text/javascript">
+function changeImage()
+{
+element=document.getElementById('example')
+if (element.src.match("out"))
+  {
+  element.src="hide-24.png";
+  }
+else
+  {
+  element.src="eye-24.png";
+  }
+}
+</script> -->
+    
+</body>
+</html>

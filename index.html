@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HCI Lab task Form</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto|Google+Sans:400, 500|roboto">
+    <script type="text/javascript">
+        var image_tracker = 'h';
+        function change() {
+            var image = document.getElementsById('hide');
+            if(image_tracker==='h') {
+                image.src = 'images/eye-24.png';
+                image_tracker = 's';
+            }
+            else {
+                image.src = 'images/hide-24.png';
+                image_tracker = 'h';
+            }
+        }
+    </script>
+</head>
+<body>
+    <div class="mainDiv">
+        <form action="#" method="get">
+            <img class="google-logo" src="images/google.png" alt="">
+            <h2>Create your Google Account</h2>
+
+            <div class="nameDiv">
+                <input class="name" type="text" name="fname" placeholder="First name" autofocus>
+                <input class="name" type="text" name="lname" placeholder="Last name">
+            </div>
+
+            <div class="userDiv">
+                <input class="username" type="email" name="username" id="email" placeholder="Username">
+                <p class="p1">You can use letters, numbers & periods</p>
+                <a href="#">Use my current  email address instead</a>
+            </div>
+            
+            <div class="pwdDiv">
+                <input type="password" name="pwd" id="pwd" placeholder="Password">
+                <input type="password" name="pwd" id="pwd" placeholder="Confirm">
+                <img id="hide" class="hide" src="images/hide-24.png" alt="Password hide and show logo" onclick="change();">
+            </div>
+            
+            <p class="p2">Use 8 or more characters with a mix of letters, numbers & symbols</p>
+
+            <div class="btnDiv">
+                <button class="signin-btn"><a href="#">Sign in instead</a></button>
+                <button class="next-btn"><a href="#">Next</a></button>
+            </div>
+        </form>
+        
+        <div class="accDiv">
+            <img class="account" src="images/account.svg" alt="">
+            <p>One account. All of Google working for you.</p>
+        </div>
+       
+    </div>
+
+    
+</body>
+</html>
